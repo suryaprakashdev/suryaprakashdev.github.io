@@ -1,0 +1,6 @@
+{
+  "name": "Surya Prakash - AI Portfolio",
+  "description": "An interactive, AI-powered portfolio and blog featuring Surya Prakash's expertise in Machine Learning, Time-Series forecasting, and Research.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
