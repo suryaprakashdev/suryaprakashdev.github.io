@@ -13,6 +13,25 @@ export const PERSONAL_INFO = {
 
 export const PROJECTS_DATA: Project[] = [
   {
+  id: "ndm1-generative-rl",
+  title: "Explainable Bioactivity Prediction for NDM-1 Inhibitors",
+  subtitle: "Research Intern — LIPN, Université Sorbonne Paris Nord",
+  description: "Developing a molecular bioactivity classifier within a generative reinforcement learning pipeline for de novo drug design, targeting NDM-1 — a critical enzyme responsible for antibiotic resistance. Integrates SHAP-based substructure explainability to make predictions chemist-interpretable.",
+  contributions: [
+    "Designing a binary bioactivity classifier to predict inhibition potential of RL-generated molecules against NDM-1, a key antibiotic-resistance metallo-β-lactamase enzyme.",
+    "Implementing SHAP TreeExplainer-based substructure decomposition to generate atom and fragment-level explanations for activity predictions.",
+    "Integrating the explainability pipeline into a generative RL reward loop, enabling goal-directed molecule generation grounded in interpretable chemical features.",
+    "Benchmarking molecular fingerprint representations (ECFP, MACCS) and GNN-based encoders for bioactivity classification on curated ChEMBL datasets."
+  ],
+  tags: ["PyTorch", "SHAP", "RDKit", "Cheminformatics", "Generative RL", "Drug Discovery", "NDM-1"],
+  metrics: [
+    { label: "Target", value: "NDM-1" },
+    { label: "Method", value: "SHAP + RL" },
+    { label: "Status", value: "In Progress" }
+  ],
+  category: "research"
+  },
+  {
     id: "time-series-transformers",
     title: "Transformers Based Time-Series Modelling",
     subtitle: "Graduate Researcher at CentraleSupélec & SLB (Schlumberger)",
@@ -126,6 +145,7 @@ export const SKILLS_DATA: SkillGroup[] = [
 ];
 
 export const EDUCATION_DATA = [
+  
   {
     institution: "CentraleSupélec, Université Paris-Saclay",
     location: "Paris, France",
@@ -150,6 +170,17 @@ export const EDUCATION_DATA = [
 ];
 
 export const EXPERIENCE_DATA = [
+  {
+  role: "Research Intern — Generative RL for Drug Design",
+  organization: "LIPN, Université Sorbonne Paris Nord",
+  location: "Villetaneuse, Paris, France",
+  period: "May 2026 – Oct 2026",
+  points: [
+    "Building a molecular bioactivity classifier to predict inhibition potential of de novo generated molecules against NDM-1, a critical enzyme driving antibiotic resistance globally.",
+    "Implementing SHAP-based substructure-level explainability to identify pharmacophoric fragments driving activity predictions, bridging black-box ML with chemist-interpretable outputs.",
+    "Integrating the classifier into a generative reinforcement learning pipeline to guide goal-directed, explainable drug molecule design."
+  ]
+  },
   {
     role: "Graduate AI & Time-Series Researcher",
     organization: "CentraleSupélec and SLB",
